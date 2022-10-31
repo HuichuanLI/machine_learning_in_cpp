@@ -54,14 +54,25 @@ int getdata(double e[][INPUTNO]) {
     int n_of_e = 0;/*数据集的个数*/
     int j = 0;/*循环的控制用*/
 
+    FILE *fin;
+    fin = fopen("majority.txt", "r");
+
+
     /*数据的输入*/
-    while (scanf("%lf", &e[n_of_e][j]) != EOF) {
-        ++j;
-        if (j >= INPUTNO) {/*下一个数据*/
-            j = 0;
-            ++n_of_e;
+    if (fin) {
+        int err = ferror(fin);
+
+        while (fscanf(fin, "%lf", &e[n_of_e][j]) != EOF) {
+            ++j;
+            if (j >= INPUTNO) {/*下一个数据*/
+                j = 0;
+                ++n_of_e;
+            }
         }
+    } else {
+        perror("1234");
     }
+
     return n_of_e;
 }
 

@@ -3,5 +3,5 @@ project(play_with_algo)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES neuron.c )
+set(SOURCE_FILES bp1.c)
 add_executable(play_with_algo ${SOURCE_FILES})
