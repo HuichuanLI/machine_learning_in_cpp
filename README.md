@@ -5,4 +5,4 @@ some machine learning algo implement in cpp
 - 蚁群算法
 - 推断
 - 前馈神经网络
-- 
+- 反向传播

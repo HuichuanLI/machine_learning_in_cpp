@@ -51,7 +51,7 @@ int main() {
 
     /*读入学习数据*/
     n_of_e = getdata(e);
-    printf("学习数据的个数:%d\n", n_of_e);
+    printf("number :%d\n", n_of_e);
 
     /*学习*/
     while (err > LIMIT) {
