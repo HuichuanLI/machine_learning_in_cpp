@@ -125,7 +125,7 @@ void convres(double convout[][INPUTSIZE]) {
 void getdata(double e[][INPUTSIZE]) {
     int i = 0, j = 0;/*循环的控制用*/
     FILE *fin;
-    fin = fopen("./data1.txt", "r");
+    fin = fopen("./data2.txt", "r");
 
     /*数据的输入*/
     while (fscanf(fin, "%lf", &e[i][j]) != EOF) {
